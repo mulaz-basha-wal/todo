@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+body {
+    background: linear-gradient(to right, #403a3e, #be5869);
+}
+.title {
+    color: white;
+    text-align: center;
+}
+.todoItemInput {
+    padding: 12px 20px;
+    font-weight: bold;
+    border: 5px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+.todoFormButtons {
+    width: 50%;
+    margin: 10px auto 50px auto;
+}
+.addItem,
+.clearAll {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 48%;
+    margin-top: 10px;
+    margin-right: 3px;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+}
+.addItem {
+    background-color: green;
+    border-color: green;
+}
+.clearAll {
+    background-color: red;
+    border-color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: 5px auto;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: gray;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoItemText {
+    padding: 5px;
+    font-weight: bold;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoDeleteButton {
+    padding: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: red;
 }
